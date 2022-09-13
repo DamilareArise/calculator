@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        margin: 0; 
+        display: flex;
+        justify-content: center;
+        background-color: whitesmoke;
+        
+    }
+    .container {
+        width: 400px;
+        max-width: 400px;
+        /* min-height: 50vh; */
+        box-shadow:  0 0 40px rgba(0, 0, 0, 0.2);
+        margin-top: 40px;
+        background-color: black;
+        padding: 2rem;
+    }
+
+    .btnBody {
+        display: flex;
+        background-color: white;
+        flex-flow: wrap;
+        margin-top: 20px;
+        justify-content: center;
+        box-shadow:  0 0 40px rgba(0, 0, 0, 0.2);
+        margin-bottom: 0;
+     
+
+    }
+
+    .screen{
+        width: 100%;
+        height: 10vh;
+        background-color: whitesmoke;
+        box-shadow:  0 0 40px rgba(0, 0, 0, 0.2);
+        margin-top: 0;
+        font-size: 19px;
+        padding: 10px;
+        text-align: end;
+        box-sizing: border-box;
+        
+    }
+
+    button {
+        width: 3rem;
+        height: 7vh;
+        background-color: black;
+        margin: 10px;
+        box-shadow:  0 0 40px rgba(0, 0, 0, 0.2);
+    }
+
+    button:active {
+        transform: scale(0.90);
+    }
+
+    #equals {
+        width: 7.2rem;
+    }
+
+    span {
+        font-size: 15px;
+        text-align: center;
+        color: white;
+    }
+
+</style>
+<body>
+    <div class="container">
+        <div class="screen" id="myScreen"></div>
+        <div class="btnBody">
+            <button onclick="num9()"><span>9</span></button>
+            <button onclick="num8()"><span>8</span></button>
+            <button onclick="num7()"><span>7</span></button>
+            <button onclick="numAdd()"><span>+</span></button>
+            <button onclick="numSubs()"><span>-</span></button>
+            <button onclick="num6()"><span>6</span></button>
+            <button onclick="num5()"><span>5</span></button>
+            <button onclick="num4()"><span>4</span></button>
+            <button onclick="numMul()"><span>*</span></button>
+            <button onclick="numDiv()"><span>/</span></button>
+            <button onclick="num3()"><span>3</span></button>
+            <button onclick="num2()"><span>2</span></button>
+            <button onclick="num1()"><span>1</span></button>
+            <button onclick="numMod()"><span>%</span></button>
+            <button onclick="numSup()"><span>^</span></button>
+            <button onclick="numDot()"><span>.</span></button>
+            <button onclick="num0()"><span>0</span></button>
+            <button onclick="numDel()"><span>CE</span></button>
+            <button id="equals"><span>=</span></button>
+        </div>
+    </div>
+    <script>
+        function num9(){
+            myScreen.innerText = 9;
+        }
+        function num8(){
+            myScreen.innerText = 8;
+        }
+        function num7(){
+            myScreen.innerText = 7;
+        }
+        function numAdd(){
+            myScreen.innerText = '+';
+        } 
+        function numSub(){
+            myScreen.innerText = '-';
+        } 
+        function num6(){
+            myScreen.innerText = 6;
+        } 
+        function num5(){
+            myScreen.innerText = 5;
+        } 
+        function num4(){
+            myScreen.innerText = 4;
+        } 
+        function numMul(){
+            myScreen.innerText = '*';
+        } 
+        function numDiv(){
+            myScreen.innerText = '/';
+        } function num3(){
+            myScreen.innerText = 3;
+        }
+        function num2(){
+            myScreen.innerText = 2;
+        }
+        function num1(){
+            myScreen.innerText = 1;
+        }
+    </script>
+</body>
+</html>
